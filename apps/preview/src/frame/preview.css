@@ -1,0 +1,40 @@
+/* The page around the player in the preview frame. Your skin lives in the project's src/ folder. */
+/* NEXORA presentation backdrop: deep ink with a quiet aurora glow behind the frame. */
+:root {
+  color-scheme: dark;
+}
+
+body {
+  margin: 0;
+  background:
+    radial-gradient(60rem 30rem at 50% 36%, rgba(124, 92, 255, 0.16), transparent 60%),
+    radial-gradient(50rem 26rem at 50% 64%, rgba(56, 225, 255, 0.1), transparent 60%),
+    #05070d;
+}
+
+.preview-page {
+  display: grid;
+  place-items: center;
+  box-sizing: border-box;
+  min-height: 100vh;
+  padding: 24px;
+}
+
+.preview-player {
+  width: 100%;
+  max-width: var(--preview-player-width, 56rem);
+}
+
+/* The aspect ratio option overrides the skin's own; `auto` lets the media's intrinsic size decide. */
+.preview-player[style*="--preview-player-ratio"] .media-skin {
+  aspect-ratio: var(--preview-player-ratio);
+}
+
+/* Player elements only provide state; the skin inside them is the box that gets sized. */
+media-i18n,
+video-player,
+live-video-player,
+audio-player,
+live-audio-player {
+  display: contents;
+}
