@@ -38,7 +38,7 @@ npm run build   # production build into dist/
 
 **Vikas Kumar Meena** — designer & developer, LIYANS DIGITAL
 
-- GitHub: [@aiworkfromhome555](https://github.com/aiworkfromhome555)
+- GitHub: [@liyansdigital](https://github.com/liyansdigital)
 - Contra: [liyanspaperlab](https://contra.com/liyanspaperlab)
 
 ## Licence
